@@ -3,7 +3,6 @@
   <head>
     <title>My Portfolio</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/mediaqueries.css') }}">
   </head>
   <body>
     <nav id="desktop-nav">
@@ -17,22 +16,7 @@
         </ul>
       </div>
     </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Seph Guirren</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
+  
     <section id="profile">
       <div class="section__pic-container">
         <img src="{{ url_for('static', filename='assets/profile-pic.png') }}" alt="Seph Guirren profile picture" />
@@ -54,7 +38,7 @@
             src="{{ url_for('static', filename='assets/linkedin.png') }}"
             alt="My LinkedIn profile"
             class="icon"
-            onclick="location.href='https://linkedin.com/'"
+            onclick="location.href='https://linkedin.com/in/mark-joseph-guirren-b9644837b'"
           />
           <img
             src="{{ url_for('static', filename='assets/github.png') }}"
@@ -245,7 +229,7 @@
             alt="LinkedIn icon"
             class="icon contact-icon"
           />
-          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+          <p><a href="https://www.linkedin.com/in/mark-joseph-guirren-b9644837b">LinkedIn</a></p>
         </div>
       </div>
     </section>
@@ -262,6 +246,5 @@
       </nav>
       <p>Copyright &#169; 2025 Seph Guirren. All Rights Reserved.</p>
     </footer>
-    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
   </body>
 </html>
