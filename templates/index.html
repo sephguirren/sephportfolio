@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="static/css/style.css" />
   </head>
   <body>
     <nav id="desktop-nav">
@@ -16,10 +16,25 @@
         </ul>
       </div>
     </nav>
-  
+    <nav id="hamburger-nav">
+      <div class="logo">Seph Guirren</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
     <section id="profile">
       <div class="section__pic-container">
-        <img src="{{ url_for('static', filename='assets/profile-pic.png') }}" alt="Seph Guirren profile picture" />
+        <img src="static/assets/profile-pic.png" alt="Seph Guirren profile picture" />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
@@ -27,7 +42,7 @@
         <p class="section__text__p2">Backend Developer</p>
         <div class="btn-container">
           <button class="btn btn-color-2" onclick="alert('CV not available yet. Please check back later!')">
-            Download CV
+          Download CV
           </button>
           <button class="btn btn-color-1" onclick="location.href='./#contact'">
             Contact Info
@@ -35,13 +50,13 @@
         </div>
         <div id="socials-container">
           <img
-            src="{{ url_for('static', filename='assets/linkedin.png') }}"
+            src="static/assets/linkedin.png"
             alt="My LinkedIn profile"
             class="icon"
-            onclick="location.href='https://linkedin.com/in/mark-joseph-guirren-b9644837b'"
+            onclick="location.href='https://www.linkedin.com/in/mark-joseph-guirren-b9644837b'"
           />
           <img
-            src="{{ url_for('static', filename='assets/github.png') }}"
+            src="static/assets/github.png"
             alt="My Github profile"
             class="icon"
             onclick="location.href='https://github.com/sephguirren/'"
@@ -55,7 +70,7 @@
       <div class="section-container">
         <div class="section__pic-container">
           <img
-            src="{{ url_for('static', filename='assets/about-pic.jpg') }}"
+            src="static/assets/about-pic.jpg"
             alt="Profile picture"
             class="about-pic"
           />
@@ -64,7 +79,7 @@
           <div class="about-containers">
             <div class="details-container">
               <img
-                src="{{ url_for('static', filename='assets/experience.png') }}"
+                src="static/assets/experience.png"
                 alt="Experience icon"
                 class="icon"
               />
@@ -73,7 +88,7 @@
             </div>
             <div class="details-container">
               <img
-                src="{{ url_for('static', filename='assets/education.png') }}"
+                src="static/assets/education.png"
                 alt="Education icon"
                 class="icon"
               />
@@ -83,17 +98,17 @@
           </div>
           <div class="text-container">
             <p>
-              I am a passionate and hardworking backend developer with a good foundation in creating reliable 
-              and scalable web applications. I have experience in server-side programming, database handling, 
-              and API development. I always aim to build efficient and secure systems that can help both users 
-              and businesses. My goal is to keep improving my skills and be part of projects that bring new and 
-              useful digital solutions.
+                I am a passionate and hardworking backend developer with a good foundation in creating reliable 
+                and scalable web applications. I have experience in server-side programming, database handling, 
+                and API development. I always aim to build efficient and secure systems that can help both users 
+                and businesses. My goal is to keep improving my skills and be part of projects that bring new and 
+                useful digital solutions.
             </p>
           </div>
         </div>
       </div>
       <img
-        src="{{ url_for('static', filename='assets/arrow.png') }}"
+        src="static/assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
         onclick="location.href='./#experience'"
@@ -109,7 +124,7 @@
             <div class="article-container">
               <article>
                 <img
-                  src="{{ url_for('static', filename='assets/checkmark.png') }}"
+                  src="static/assets/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -120,7 +135,7 @@
               </article>
               <article>
                 <img
-                  src="{{ url_for('static', filename='assets/checkmark.png') }}"
+                  src="static/assets/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -131,7 +146,7 @@
               </article>
               <article>
                 <img
-                  src="{{ url_for('static', filename='assets/checkmark.png') }}"
+                  src="static/assets/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -147,7 +162,7 @@
             <div class="article-container">
               <article>
                 <img
-                  src="{{ url_for('static', filename='assets/checkmark.png') }}"
+                  src="static/assets/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -158,7 +173,7 @@
               </article>
               <article>
                 <img
-                  src="{{ url_for('static', filename='assets/checkmark.png') }}"
+                  src="static/assets/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -169,7 +184,7 @@
               </article>
               <article>
                 <img
-                  src="{{ url_for('static', filename='assets/checkmark.png') }}"
+                  src="static/assets/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -180,7 +195,7 @@
               </article>
               <article>
                 <img
-                  src="{{ url_for('static', filename='assets/checkmark.png') }}"
+                  src="static/assets/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -194,7 +209,7 @@
         </div>
       </div>
       <img
-        src="{{ url_for('static', filename='assets/arrow.png') }}"
+        src="static/assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
         onclick="location.href='./#projects'"
@@ -203,13 +218,90 @@
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
-      <!-- awan palang paps -->
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="static/assets/project-1.png"
+                alt="Chat Bot"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Chat Bot</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/sephguirren/ChatBot.github.io'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="static/assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="static/assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <img
-        src="{{ url_for('static', filename='assets/arrow.png') }}"
+        src="static/assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
         onclick="location.href='./#contact'"
       />
+
     </section>
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
@@ -217,7 +309,7 @@
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
           <img
-            src="{{ url_for('static', filename='assets/email.png') }}"
+            src="static/assets/email.png"
             alt="Email icon"
             class="icon contact-icon email-icon"
           />
@@ -225,7 +317,7 @@
         </div>
         <div class="contact-info-container">
           <img
-            src="{{ url_for('static', filename='assets/linkedin.png') }}"
+            src="static/assets/linkedin.png"
             alt="LinkedIn icon"
             class="icon contact-icon"
           />
@@ -246,5 +338,14 @@
       </nav>
       <p>Copyright &#169; 2025 Seph Guirren. All Rights Reserved.</p>
     </footer>
+    <script>
+    function toggleMenu() {
+      const menu = document.querySelector(".menu-links");
+      const hamburger = document.querySelector(".hamburger");
+      menu.classList.toggle("open");
+      hamburger.classList.toggle("open");
+    }
+    </script>
+
   </body>
 </html>
